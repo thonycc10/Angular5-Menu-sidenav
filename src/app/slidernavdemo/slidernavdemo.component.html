@@ -1,0 +1,16 @@
+<mat-card class="demo-panel">
+  <mat-card-title>
+    Angular Material Sidenav demo
+  </mat-card-title>
+  <mat-card-content>
+    <mat-sidenav-container class="example-container">
+      <!--mode="push" -> es usado para mover a un castado a la hora de salir el sidenav-->
+      <mat-sidenav #sidenav class="example-sidenav" mode="push">
+        Sidenav contect goes here!
+      </mat-sidenav>
+      <div class="example-sidenav-content">
+        <button type="button" mat-raised-button color="primary" (click)="sidenav.open()">Abrir Sidenav</button>
+      </div>
+    </mat-sidenav-container>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,30 @@
+<mat-card class="demo-panel">
+  <mat-card-title>
+    Angular Material Menu Demo
+  </mat-card-title>
+  <mat-card-content>
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">Abir Menú</button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="subMenu">
+        <mat-icon>settings</mat-icon>
+        <span>Configuración</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check Voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable Alerts</span>
+      </button>
+    </mat-menu>
+
+    <mat-menu #subMenu="matMenu">
+      <button mat-menu-item><mat-icon>face</mat-icon><span>Check Voicemail</span></button>
+      <button mat-menu-item></button>
+      <button mat-menu-item></button>
+    </mat-menu>
+
+  </mat-card-content>
+</mat-card>
